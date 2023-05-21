@@ -4,16 +4,20 @@
     {
         static void Main(string[] args)
         {
+            Pi();
+        }
+        static void Pi()
+        {
             double n, k;
             double s, x, y;
             k = 0;
             n = 1000;
             Random r = new Random();
-            for(int i = 1; i <= n; i++)
+            for (int i = 1; i <= n; i++)
             {
-                x = r.NextDouble() * 4 - 2;
-                y = r.NextDouble() * 4 - 2;
-                if (x * x + y * y <= 4)
+                x = r.NextDouble();
+                y = r.NextDouble();
+                if (x * x + y * y <= 1)
                 {
                     k = k + 1;
                 }
