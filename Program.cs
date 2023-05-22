@@ -5,6 +5,7 @@
         static void Main(string[] args)
         {
             Pi();
+            Console.WriteLine("Результат расчёта фигуры " + S1(1000));
         }
         static void Pi()
         {
@@ -26,7 +27,7 @@
             Console.WriteLine("Результат Пи = " + s);
             Console.WriteLine("Точное Пи=" + Math.PI);
         }
-        public double S1(double n)
+        public static double S1(double n)
         {
             Random r = new Random();
             double k = 0;
@@ -38,7 +39,7 @@
             }
             return (k / n) * 20;
         }
-        public double S2(double n)
+        public static double S2(double n)
         {
             Random r = new Random();
             double k = 0;
@@ -50,7 +51,7 @@
             }
             return (k / n) * 100;
         }
-        public double S3(double n)
+        public static double S3(double n)
         {
             Random r = new Random();
             double k = 0;
@@ -62,7 +63,7 @@
             }
             return (k / n) * 90;
         }
-        public double S4(double n)
+        public static double S4(double n)
         {
             Random r = new Random();
             double k = 0;
@@ -74,7 +75,7 @@
             }
             return (k / n) * 60;
         }
-        public double S5(double n)
+        public static double S5(double n)
         {
             Random r = new Random();
             double k = 0;
@@ -86,7 +87,7 @@
             }
             return (k / n) * 32;
         }
-        public double S6(double n)
+        public static double S6(double n)
         {
             Random r = new Random();
             double k = 0;
